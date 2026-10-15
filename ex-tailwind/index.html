@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fio & Prensa - Estudo Tailwind</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-[#EFE7D6] text-[#2A241C] font-sans">
+
+    <nav class="flex justify-between items-center p-4 bg-[#1B4332] text-[#EFE7D6]">
+        <div class="font-serif text-2xl font-bold">Fio & Prensa</div>
+        <ul class="flex gap-4">
+            <li><a href="#sobre" class="hover:text-[#A9895F]">Sobre</a></li>
+            <li><a href="#galeria" class="hover:text-[#A9895F]">Galeria</a></li>
+        </ul>
+    </nav>
+
+    <header class="p-12 text-center border-b-4 border-[#A9895F]">
+        <h1 class="font-serif text-4xl md:text-5xl font-bold text-[#1B4332] mb-4">A Arte de Guardar Memórias</h1>
+        <p class="text-lg mb-8 max-w-lg mx-auto">Encadernação artesanal feita à mão. Apenas papel, linha encerada e
+            muito cuidado em cada detalhe.</p>
+        <a href="#galeria" class="bg-[#9A3324] text-[#EFE7D6] px-6 py-3 rounded font-bold hover:bg-[#2A241C]">Conheça os
+            Cadernos</a>
+    </header>
+
+    <main class="max-w-5xl mx-auto p-6">
+
+        <section id="sobre" class="my-12">
+            <h2 class="font-serif text-3xl text-center text-[#1B4332] mb-8">Nosso Processo</h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-center">
+                <div class="bg-white p-6 border border-[#A9895F]">
+                    <h3 class="font-serif text-xl font-bold text-[#1B4332]">1. O Corte</h3>
+                    <p class="mt-2 text-sm">Refile manual das folhas.</p>
+                </div>
+                <div class="bg-white p-6 border border-[#A9895F]">
+                    <h3 class="font-serif text-xl font-bold text-[#1B4332]">2. A Costura</h3>
+                    <p class="mt-2 text-sm">Trançado que une as páginas.</p>
+                </div>
+                <div class="bg-white p-6 border border-[#A9895F]">
+                    <h3 class="font-serif text-xl font-bold text-[#1B4332]">3. A Capa</h3>
+                    <p class="mt-2 text-sm">Revestimento em tecido cru.</p>
+                </div>
+                <div class="bg-white p-6 border border-[#A9895F]">
+                    <h3 class="font-serif text-xl font-bold text-[#1B4332]">4. A Prensa</h3>
+                    <p class="mt-2 text-sm">Estruturação e descanso.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria" class="my-12 bg-white p-8 border border-[#A9895F]">
+            <h2 class="font-serif text-3xl text-center text-[#1B4332] mb-8">Acervo</h2>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div class="bg-[#1B4332] text-[#EFE7D6] h-32 flex items-center justify-center font-bold">Caderno Verde
+                </div>
+                <div class="bg-[#9A3324] text-[#EFE7D6] h-32 flex items-center justify-center font-bold">Diário Vermelho
+                </div>
+                <div class="bg-[#A9895F] text-[#2A241C] h-32 flex items-center justify-center font-bold">Sketchbook
+                    Dourado</div>
+                <div class="bg-[#2A241C] text-[#EFE7D6] h-32 flex items-center justify-center font-bold">Álbum Preto
+                </div>
+                <div class="bg-[#1B4332] text-[#EFE7D6] h-32 flex items-center justify-center font-bold">Caderno Pautado
+                </div>
+                <div class="bg-[#9A3324] text-[#EFE7D6] h-32 flex items-center justify-center font-bold">Planner
+                    Pontilhado</div>
+            </div>
+        </section>
+
+        <section class="my-12">
+            <div class="bg-[#EFE7D6] border-4 border-[#1B4332] p-8 max-w-2xl mx-auto text-center">
+                <p class="font-serif italic text-xl text-[#2A241C] mb-4">"A costura é impecável e o caderno abre 180
+                    graus certinho. Dá gosto de escrever!"</p>
+                <p class="font-bold text-[#9A3324] uppercase text-sm">— Cliente Satisfeito</p>
+            </div>
+        </section>
+
+    </main>
+
+s    <footer class="bg-[#2A241C] text-[#EFE7D6] text-center p-6">
+        <div class="font-serif text-2xl text-[#A9895F] mb-2">Fio & Prensa</div>
+        <p class="text-xs">Estudo prático de Tailwind (Apenas HTML e Classes)</p>
+    </footer>
+
+</body>
+
+</html>

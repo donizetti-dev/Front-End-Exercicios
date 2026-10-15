@@ -1,0 +1,224 @@
+:root {
+    --bg-primary: #000000;
+    --bg-secondary: #1a1a1a;
+    --text-primary: #ffffff;
+    --text-muted: #d9d9d9;
+    --accent: #d4af37;
+    --accent-dark: #a98918;
+    --border: rgba(255, 255, 255, 0.12);
+    --shadow: rgba(0, 0, 0, 0.35);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: min(1120px, calc(100% - 2rem));
+    margin: 0 auto;
+}
+
+.site-header {
+    background: var(--bg-primary);
+    border-bottom: 1px solid var(--border);
+}
+
+.brand {
+    padding: 1.25rem 0;
+    font-size: 1.6rem;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+
+.hero {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(26, 26, 26, 0.92)),
+        radial-gradient(circle at top, rgba(212, 175, 55, 0.2), transparent 38%);
+    padding: 4rem 0 3rem;
+}
+
+.hero-content {
+    max-width: 760px;
+}
+
+.eyebrow {
+    margin: 0 0 0.75rem;
+    color: var(--accent);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.75rem;
+}
+
+h1 {
+    margin: 0;
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    line-height: 1.1;
+    letter-spacing: -0.04em;
+}
+
+.lead {
+    margin-top: 1.25rem;
+    max-width: 60ch;
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+.match-details {
+    padding: 2.5rem 0 4rem;
+    background: var(--bg-secondary);
+}
+
+.scoreboard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(0.5rem, 2vw, 1.5rem);
+    margin: 0 auto 2rem;
+    padding: 1.5rem 1rem;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    box-shadow: 0 12px 32px var(--shadow);
+    flex-wrap: wrap;
+}
+
+.team {
+    font-size: clamp(1.1rem, 2vw, 1.75rem);
+    font-weight: 700;
+    text-align: center;
+}
+
+.score-box {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    padding: 0.75rem 1.25rem;
+    border-radius: 12px;
+    background: rgba(212, 175, 55, 0.08);
+    border: 1px solid rgba(212, 175, 55, 0.5);
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    font-weight: 900;
+}
+
+.score-box span {
+    color: var(--accent);
+}
+
+.score-box strong {
+    color: var(--text-primary);
+}
+
+.opponent {
+    color: var(--text-muted);
+}
+
+h2 {
+    margin: 0 0 1.25rem;
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    text-align: center;
+}
+
+.scorers {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 480px;
+    background: rgba(0, 0, 0, 0.24);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.scorers li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.scorers li:last-child {
+    border-bottom: none;
+}
+
+.scorers span {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.site-footer {
+    padding: 2rem 0 3rem;
+    background: var(--bg-primary);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
+    padding: 0.9rem 1.5rem;
+    background: var(--accent);
+    color: var(--bg-primary);
+    border-radius: 999px;
+    font-weight: 700;
+    transition: transform 0.2s ease, background 0.2s ease;
+    box-shadow: 0 10px 25px rgba(212, 175, 55, 0.3);
+}
+
+.cta-button:hover,
+.cta-button:focus-visible {
+    background: var(--accent-dark);
+    transform: translateY(-1px);
+}
+
+.credits {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        padding: 6rem 0 4rem;
+    }
+
+    .site-footer {
+        padding: 2.5rem 0 4rem;
+    }
+}

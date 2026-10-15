@@ -1,0 +1,40 @@
+## Gemini
+
+## 1.prompt
+Faça uma entrevista comigo para entendermos o que posso fazer para essa atividade de front-end básico
+
+
+
+Desenvolvam uma landing page, com tema livre, para treinar e explorar os benefícios do vibecode.
+
+
+
+O foco não é só o resultado final.
+
+Quero ver como você pensou, como se comunicou com a IA e como corrigiu o caminho quando algo não saiu como esperado. 
+
+Para registros da atividade, além da página gerada, quero na pasta do projeto todos os registros dos prompts, as pesquisas, decisões de design, referências visuais, paleta de cores, tudo o que direcionou a resolução final da página.
+
+
+
+O objetivo é desenvolver repertório visual, tomada de decisão em identidade visual (IDV) e clareza na comunicação com ferramentas de IA, aprendendo a escrever prompts específicos e a revisar o que a IA entrega com olhar crítico.
+
+
+
+## 2.prompt
+Entrevista
+
+## 3.prompt
+Faça um ultimo arquivo .md para auxilio de outro bot utilizando o conceito de spec-driven
+
+##Requisito
+    Estruturas do projeto:
+    index.html
+    css/style.css
+
+## copilot - janela 0 contexto
+Você é um dev iniciando na area de front-end
+Siga o arquivo spec_implementation.md para criarmos um site temático.
+
+## Correções 
+- alguns textos
